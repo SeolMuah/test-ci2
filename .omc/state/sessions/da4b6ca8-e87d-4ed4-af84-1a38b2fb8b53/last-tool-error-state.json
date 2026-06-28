@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"cd \\\"/Users/muah/Desktop/업스테이지_가천대/drive-download-20260626T125619Z-3-001/01. Service Deployment/04. 학습 콘텐츠/Daily Mission/day4-mission\\\" && \\\\\\ngit add -A && \\\\\\necho \\\"=== 커밋될 파일 (${$(git ...",
+  "error": "Exit code 1\n=== 커밋될 파일 (      36개) ===\n.env.example\n.github/workflows/ci.yml\n.gitignore\n.omc/state/sessions/da4b6ca8-e87d-4ed4-af84-1a38b2fb8b53/pre-tool-advisory-throttle.json\n.pre-commit-config.yaml\nREADME.md\napp/__init__.py\napp/api/__init__.py\napp/api/routes/__init__.py\napp/api/routes/chat.py\napp/core/__init__.py\napp/core/config.py\napp/core/prompts.py\napp/graph/__init__.py\napp/graph/edges.py\napp/graph/graph.py\napp/graph/nodes.py\napp/graph/state.py\napp/main.py\napp/repositories/__init__.py\napp/...",
+  "timestamp": "2026-06-28T02:23:56.416Z",
+  "retry_count": 1
+}
