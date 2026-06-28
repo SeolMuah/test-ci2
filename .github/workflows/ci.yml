@@ -21,6 +21,7 @@ on:
     branches: [main]
     paths:
       - 'app/**'
+      - 'algorithms/**'
       - 'tests/**'
       - 'pyproject.toml'
       - 'uv.lock'
@@ -30,6 +31,7 @@ on:
     branches: [main]
     paths:
       - 'app/**'
+      - 'algorithms/**'
       - 'tests/**'
       - 'pyproject.toml'
       - 'uv.lock'
@@ -62,10 +64,10 @@ jobs:
         run: uv sync --extra dev
 
       - name: Run Ruff (lint)
-        run: uv run ruff check app/ tests/ --output-format=github
+        run: uv run ruff check app/ tests/ algorithms/ --output-format=github
 
       - name: Run Ruff (format)
-        run: uv run ruff format app/ tests/ --check
+        run: uv run ruff format app/ tests/ algorithms/ --check
 
   # Job 2: Test (단위 테스트)
   test:
