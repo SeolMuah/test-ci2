@@ -6,8 +6,11 @@
 
 from collections import deque
 
+# 그래프 타입 별칭: 노드 -> 인접 노드 리스트
+Graph = dict[str, list[str]]
 
-def bfs(graph: dict[str, list[str]], start: str) -> list[str]:
+
+def bfs(graph: Graph, start: str) -> list[str]:
     """그래프를 너비 우선으로 탐색해 방문 순서를 반환한다.
 
     Args:
@@ -33,7 +36,7 @@ def bfs(graph: dict[str, list[str]], start: str) -> list[str]:
 
 
 if __name__ == "__main__":
-    sample_graph: dict[str, list[str]] = {
+    sample_graph: Graph = {
         "A": ["B", "C"],
         "B": ["A", "D", "E"],
         "C": ["A", "F"],
